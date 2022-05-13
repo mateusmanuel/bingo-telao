@@ -15,14 +15,14 @@ html {background: #021928 url('../imagens/bg-site.png') top repeat-x;}
 #numeros {width: 50%; margin: 1% 0 0 2%; float: left;}
 #numeros table {float: left; width: 20%; text-align: center;}
 #numeros table th {border:4px solid #24358b; font-size: 28px; color: white; text-shadow: 0 0 8px #000; -moz-text-shadow: 0 0 8px #000;}
-#numeros #vermelho th {background: #C62828}
-#numeros #amarelo th {background: #F9A825}
-#numeros #verde th {background: #2E7D32}
-#numeros #azul th {background: #0277BD}
-#numeros #roxo th {background: #7B1FA2}
+#numeros #vermelho th {background: #1565c0}
+#numeros #amarelo th {background: #00838f}
+#numeros #verde th {background: #2e7d32}
+#numeros #azul th {background: #9e9d24}
+#numeros #roxo th {background: #ff8f00}
 #numeros table td {border:2px solid #314396; margin: 1px 0; cursor: default; padding: 0; font-size: 23px; width: 50%; font-weight: bold; background: #f7f7f7; color:#8898c8;}
 
-#numeros .sorteado {background: #ffff05; color:black; cursor: not-allowed;}
+#numeros .sorteado {background: #ffeb3b; color:black; cursor: not-allowed;}
 #numeros .ultimo {background: #d10000; color:white; cursor: not-allowed;}
 
 #bolas {float: right; clear: right; width: 47%; padding-left: 3%; margin-top: 10px; position: relative; text-align: center;}
@@ -41,9 +41,9 @@ html {background: #021928 url('../imagens/bg-site.png') top repeat-x;}
 #bolas #penultima-bola strong {font-size: 46px; -webkit-text-stroke: 3px #000;}
 #bolas #penultima-bola span {font-size: 95px; width: 150px; padding: 0 14px; border-width: 7px;}
 
-#bolas .vermelho {background-image: radial-gradient(#D32F2F, #C62828);}
-#bolas .amarelo  {background-image: radial-gradient(#FBC02D, #F9A825);}
-#bolas .verde 	 {background-image: radial-gradient(#689F38, #558B2F);}
-#bolas .azul 	 {background-image: radial-gradient(#0288D1, #0277BD);}
-#bolas .roxo 	 {background-image: radial-gradient(#7B1FA2, #6A1B9A);}
+#bolas .vermelho {background-image: radial-gradient(#0d47a1, #1565c0);}
+#bolas .amarelo  {background-image: radial-gradient(#006064, #00838f);}
+#bolas .verde 	 {background-image: radial-gradient(#1b5e20, #2e7d32);}
+#bolas .azul 	 {background-image: radial-gradient(#827717, #9e9d24);}
+#bolas .roxo 	 {background-image: radial-gradient(#ff6f00, #ff8f00);}
 
