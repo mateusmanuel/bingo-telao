@@ -26,7 +26,7 @@ html {background: #021928 url('../imagens/bg-site.png') top repeat-x;}
 #numeros .ultimo {background: #d10000; color:white; cursor: not-allowed;}
 
 #bolas {float: right; clear: right; width: 47%; padding-left: 3%; margin-top: 10px; position: relative; text-align: center;}
-.especial {background: url('../imagens/bg-especial.png'); padding-bottom: 120px}
+/* .especial {background: url('../imagens/bg-especial.png'); padding-bottom: 120px} */
 #bolas h2 {margin: 0; padding: 5px 0; cursor: pointer; font-size: 50px; color:#28348a; text-align: center; text-transform: uppercase; text-shadow: 0 0 3px #000; display: inline-block;}
 
 #bolas p {border-radius: 100%; text-align: center;}
