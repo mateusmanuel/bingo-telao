@@ -38,6 +38,7 @@
     
                 $('#numeros td').removeClass().addClass('cinza');
                 $('#banner #propaganda').hide();
+                $('#banner #propaganda-video').hide();
                 $('#banner .flexslider').show();
                 trocabola_maior('ultima',0);
                 trocabola_menor('penultima',0);
@@ -74,6 +75,7 @@
                     trocabola_menor(ultimo.text());
                 }
                 $('#banner .flexslider').hide();
+                limpa_tela()
                 $('#banner #propaganda').attr('src','patrocinadores/img'+ num.text() +'.png').show();
             }
         }
@@ -107,11 +109,21 @@
             $('#penultima-bola span').text(num);
             trocacor('penultima',num);
         }
+        function exibe_video(){
+            var bola = $('#ultima-bola span').text();
+            $('#banner #propaganda').hide();
+            $('#banner #propaganda-video').attr('src','patrocinadores/video'+ bola +'.mp4').show();
+            
+        }
+        function limpa_tela(){
+            $('#banner #propaganda-video').hide();
+            $('#banner #propaganda').hide();
+        }
     </script>
 </head>
 <body>
     <div id="logo">
-        <img src="logo.jpeg" alt="Paróquia Santuário Nossa Senhora Aparecida">
+        <img src="logo.png" alt="Festa da Padroeira - SMAB">
     </div>
     <div id="numeros">
         <!-- A -->
@@ -175,7 +187,7 @@
             <tr><td class="cinza">68</td></tr>
         </table>
         <div id="banner">
-            <img id="propaganda" src="" />
+            <img id="propaganda" src="" onerror="exibe_video()"/>
             <!-- <div class="flexslider">
               <ul class="slides">
                 <li><img src="fotos/foto1.jpg" /></li>
@@ -185,12 +197,12 @@
                 <li><img src="fotos/foto5.jpg" /></li>
               </ul>
             </div> -->
+            <video id="propaganda-video" autoplay onerror="limpa_tela()"/>
         </div>
     </div>
 
 
     <div id="bolas">
-        <h2>&nbsp;</h2>
         <p id="ultima-bola">
             <strong>-</strong>
             <span>-</span>
@@ -199,6 +211,7 @@
             <strong>-</strong>
             <span>-</span>
         </p>
+        <h2>&nbsp;</h2>
         <!-- <div id="logo-seminario">
             <img src="arquivos/imagens/seminario.png" alt="Logo do Seminário">
         </div> -->
